@@ -7,8 +7,6 @@ import SignUp from '../views/SignUp.vue'
 import Footer from '../components/Footer.vue'
 import ToDo from '../views/ToDo.vue'
 import Schedule from '../views/Schedule.vue'
-// import {DayPilot, DayPilotScheduler} from 'daypilot-pro-vue'
-
 
 
 // import Vue from 'vue'
