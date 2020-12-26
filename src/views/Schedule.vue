@@ -1,6 +1,6 @@
 <template>
   <div>
-  <b-navbar toggleable="lg" type="light" variant="info">
+  <b-navbar position="fixed">
     <b-navbar-brand href="#">Taskify</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -49,6 +49,10 @@ export default {
 
 <style scoped>
     div{
+        background-color: #FAD744;
+    }
+
+    b-navbar {
         background-color: #FAD744;
     }
 </style>
