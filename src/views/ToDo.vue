@@ -1,47 +1,37 @@
-<template id="ToDo">
-    <div id="todo" class="container">
-        <form>
+<template>
+    <div id="todo">
+        <div class="container">
+            <h1>My ToDo List</h1>
             <input type="text" placeholder="Enter your task" v-model="newTask">
             <button @click="addTask">Add Task</button>
-            <button class="delete-all">Delete All</button>
-        </form>
-        <ToDo v-for="(task,index) in tasks" :key="index">
-            <div class="task">
+            <button class="delete-all" @click="deleteAll">Delete All</button>
+
+            <div v-for="(task,index) in tasks" :key="index">
+                <div class="task">
                  {{task.description}}
-            <span><button class="delete" @click="deleteTask(index)">Delete</button></span>
+                <span><button class="delete" @click="deleteTask(index)">Delete</button></span>
+                <span><button class="delete">Done</button></span>
             </div>
-        </ToDo>
+        </div>
+        </div>
     </div>
 </template>
 
 <script>
-import ToDo from './ToDo.vue';
-
 export default {
-    name: 'ToDoComponent',
-    components: {
-        ToDo,
-    },
-    props: {
-        tasks: {
-            type: Array,
-            default: () => []
-        }
-    },
+    name: 'ToDo',
     data(){
         return{
-            newTask: ""
+            newTask: "",
+            tasks: []
         }
     },
     methods:{
         addTask(){
-            if (this.newTask) {
-                this.tasks.push({
-                  description: this.newTask,
-                  completed: false
-                });
-            this.newTask = '';
-            }
+            this.tasks.push({
+                description: this.newTask
+            }),
+            this.newTask = ''
         },
         deleteTask(index){
             this.tasks.splice(index,1);
