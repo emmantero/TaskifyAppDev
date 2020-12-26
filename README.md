@@ -26,5 +26,10 @@ npm install vue bootstrap-vue bootstrap
 https://drive.google.com/drive/folders/1rVLOo7M4wT34aN2xdW25UmSXHOFLWHuf?usp=sharing
 ```
 
+### NOTE
+```
+if ever running "npm run serve" does not show/work, go to package.json and run the debug button after line 4. Idk how but it just works after running debug lol.
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
