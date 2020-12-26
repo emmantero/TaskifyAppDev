@@ -6,6 +6,20 @@ import LogIn from '../views/LogIn.vue'
 import SignUp from '../views/SignUp.vue'
 import Footer from '../components/Footer.vue'
 import User from '../views/User.vue'
+import ToDo from '../views/ToDo.vue'
+import Schedule from '../views/Schedule.vue'
+
+
+// import Vue from 'vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Install BootstrapVue
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
+
 
 Vue.use(VueRouter)
 
@@ -47,6 +61,11 @@ const routes = [
     path: '/user',
     name: 'User',
     component: User
+  }, 
+  {
+    path: '/schedule',
+    name: 'Schedule', 
+    component: Schedule
   },
   {
     path: '/todo',

@@ -6,8 +6,9 @@
           <input type="text" name="firstname" placeholder="First Name"><br>
           <input type="text" name="lastname" placeholder="Last Name"><br>
           <input type="text" name="email" placeholder="Email Address"><br>
-          <input type="text" name="password" placeholder="Password"><br><br>
-          <button type="submit">Sign Up!</button>
+          <input type="password" name="password" placeholder="Password"><br><br>
+          <!-- <button type="submit">Sign Up!</button> -->
+          <button type="submit"><router-link to="/ToDo">Sign Up!</router-link></button>
       </form>
   </div>
 </template>
