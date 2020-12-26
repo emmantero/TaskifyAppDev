@@ -22,7 +22,7 @@ export default {
 <style scoped>
     .signup-form{
         width: 450px;
-        height: 450px;
+        height: 500px;
         border: 10px solid #2b3252;
         background-color: #FFFFFF;
         margin: auto;
@@ -37,8 +37,16 @@ export default {
         border-radius: 12px;
     }
 
+    input[type=password] {
+        width: 350px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
     button[type=submit] {
-        width: 75px;
+        width: 90px;
         height: 40px;
         margin: 8px 0;
         border-radius: 12px;
@@ -47,5 +55,10 @@ export default {
     button[type=submit]:hover {
         background-color: #ef5455; 
         color: white;
+    }
+
+    h1 {
+        font-size: 36px;
+        padding-top: 20px;
     }
 </style>

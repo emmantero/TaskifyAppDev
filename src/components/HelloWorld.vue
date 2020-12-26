@@ -22,7 +22,7 @@ h1{
 }
 
 #SignUp {
-  margin-top: 30px;
+  margin-top: 100px;
   margin-right: 50px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   transition-duration: 0.4s;
@@ -39,7 +39,7 @@ h1{
 }
 
 #LogIn {
-  margin-top: 30px;
+  margin-top: 100px;
   margin-left: 50px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   transition-duration: 0.4s;
@@ -52,6 +52,10 @@ h1{
 #LogIn:hover{
   background-color:#ef5455; /* Green */
   color: white;
+}
+
+h1 {
+  padding-top: 50px;
 }
 
 </style>

@@ -4,7 +4,8 @@
     <h1>Login to your account</h1> <br>
     <input type="text" name="username" v-model="input.username" placeholder="Enter Username" /> <br><br>
     <input type="password" name="password" v-model="input.password" placeholder="Enter Password" /><br><br><br>
-    <button type="button" v-on:click="login()">Log In!</button>
+    <!-- <button type="button" v-on:click="login()">Log In!</button> -->
+    <button type="button" v-on:click="login()"><router-link to="/Schedule">Log In!</router-link></button>
   </div>
 </template>
 
@@ -39,7 +40,7 @@ export default {
 <style scoped>
   #login {
         width: 450px;
-        height: 400px;
+        height: 450px;
         border: 10px solid #2b3252;
         background-color: #FFFFFF;
         margin: auto;
@@ -74,5 +75,10 @@ export default {
   button[type=button]:hover {
         background-color: #ef5455; 
         color: white;
-    }
+  }
+
+  h1 {
+    
+    font-size: 36px;
+  }
 </style>
